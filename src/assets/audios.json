@@ -1,9 +1,91 @@
 [{
-  "titulo": "Prueba1",
-  "descripcion": "prueba probando probadita prueba1",
-  "url": "/aaa/aa.mp3"
+  "titulo": "A la maira...",
+  "descripcion": "a la maira le voy a lavar la zanja puta hermosa a esa le voy a hacer el amor",
+  "url": "/assets/audios/alamaira.mp3",
+  "duracion": 22 ,
+  "reproduciendo": false 
 },{
-  "titulo": "Prueba2",
-  "descripcion": "prueba2 probando2 probadita2",
-  "url": "/aaa/aa2.mp3"
-}]
+  "titulo": "Vino el 19, me dormí...",
+  "descripcion": "Vino el 19 me dormí Casuarina me dormi apareci en caucete que seco casa de una chichi",
+  "url": "/assets/audios/el19.mp3",
+  "duracion": 64 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Capital de los sismos...",
+  "descripcion": "capital de los sismos san juan ",
+  "url": "/assets/audios/sismos.mp3",
+  "duracion": 22 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Comprate una semita...",
+  "descripcion": "comprame una semita porque estoy hasta la chota culia necesito rescatarme o comprame una pija",
+  "url": "/assets/audios/semita.mp3",
+  "duracion": 13 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Vos vieras hueon va ser un espectáculo...",
+  "descripcion": "Vos vieras hueon va ser un espectáculo",
+  "url": "/assets/audios/sheraton.mp3",
+  "duracion": 47 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Este grupo no sirve papija...",
+  "descripcion": "Este grupo no sirve papija",
+  "url": "/assets/audios/gruponosirve.mp3",
+  "duracion": 22 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "El falcon de la Reventa",
+  "descripcion": "El falcon de la Reventa",
+  "url": "/assets/audios/falcon.mp3",
+  "duracion": 124 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Tarado el pendejo, porque no compran un fiambre en el kiosco...",
+  "descripcion": "Porque no se compran un fiambre en el kiosco",
+  "url": "/assets/audios/fiambre.mp3",
+  "duracion": 14 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Praga, ese fue el final de la pelea...",
+  "descripcion": "Praga, ese fue el final de la pelea",
+  "url": "/assets/audios/praga.mp3",
+  "duracion": 72 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "El sapo culiao salta",
+  "descripcion": "El sapo culiao salta",
+  "url": "/assets/audios/saposalta.mp3",
+  "duracion": 32 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Te estoy filmando vigilante, camara 8",
+  "descripcion": "Te estoy filmando vigilante, camara 8",
+  "url": "/assets/audios/camara8.mp3",
+  "duracion": 46 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Tus shicos huevos",
+  "descripcion": "Tus shicos huevos",
+  "url": "/assets/audios/shicoshuevos.mp3",
+  "duracion": 40 ,
+  "reproduciendo": false 
+},
+{
+  "titulo": "Vos sos loco o te patió una avispa...",
+  "descripcion": "Vos sos loco o te patió una avispa",
+  "url": "/assets/audios/avispa.mp3",
+  "duracion": 38 ,
+  "reproduciendo": false 
+}
+]

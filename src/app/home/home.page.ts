@@ -12,21 +12,29 @@ export class HomePage implements OnInit {
   textoBuscar: string;
   audiosBuscar: any[] = [];
   buscando = false;
+  audio = new Audio();
+  audioTiempo: any;
+
   constructor(private audiosService: AudiosService) {}
 
   ngOnInit(): void {
     this.audiosService.getAudios().subscribe((data) => {
-      this.audios = data;
+      this.audios = data.sort(function (a, b) {
+        return a.titulo.localeCompare(b.titulo);
+      });
+      this.audiosBuscar = this.audios;
     });
   }
 
   buscar() {
+    this.audiosBuscar= [];
+    let searchText = this.textoBuscar.toLocaleLowerCase();
+
     this.audios.forEach((audio) => {
-      // audio.descripcion.forEach((pal) => {
-      //   if (this.textoBuscar === pal){
-      //     this.audiosBuscar.push(audio);
-      //   }
-      // });
+      if (audio.descripcion.toLocaleLowerCase().includes(searchText)){
+        this.audiosBuscar.push(audio);
+      }
+    
     });
     this.buscando = true;
   }
@@ -41,5 +49,30 @@ export class HomePage implements OnInit {
   }
 
   play(a: any) {
+    this.pausar(a);
+    if(a.reproduciendo){
+      a.reproduciendo = false;
+      return;
+    }
+    this.audio.src=a.url;
+    this.audio.load();
+    this.audio.play();
+    a.reproduciendo=true;
+    this.audioTiempo = setTimeout( () => {
+      a.reproduciendo=false
+    },a.duracion *1000)
+  }
+
+  pausar(a:any){
+    clearTimeout( this.audioTiempo );
+    this.audio.pause();
+    this.audio.currentTime = 0;
+    for(let audio of this.audiosBuscar){
+      if(audio.titulo != a.titulo){
+        audio.reproduciendo = false;
+      }
+    }
+
+
   }
 }

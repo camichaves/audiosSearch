@@ -1,13 +1,13 @@
 <ion-header class="ion-no-border" >
-  <ion-item lines="none">
+  <!-- <ion-item lines="none">
     <ion-button (click)="mostrarPop($event)" fill="clear" color="light">
       <ion-icon slot="icon-only" name="menu"></ion-icon>
     </ion-button>
-  </ion-item>
+  </ion-item> -->
   <ion-item lines="none">
-    <div class="ion-padding-start ion-padding-bottom">
+    <div class="ion-padding-top ion-padding-start ion-padding-bottom">
       <ion-label>
-        <h2>Audios de Whatsapp</h2>
+        <h2>Audios de Whatsapp SJ</h2>
       </ion-label>
 
       <ion-row class="ion-align-items-center">
@@ -25,38 +25,45 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<br>
-    <ion-list *ngIf="!buscando">
+    <!-- <ion-list *ngIf="!buscando">
       <ion-item-sliding *ngFor="let a of audios">
         <ion-item>
           <ion-label>{{a.titulo}}</ion-label>
 
-          <ion-button slot="end" color="dark" fill="clear" (click)="play(a)">
-            <ion-icon slot="icon-only"  name="play-outline"></ion-icon>
+          <ion-button *ngIf="!a.reproduciendo" slot="end" color="dark" fill="clear" (click)="play(a)">
+            <ion-icon  slot="icon-only"  name="play-outline"></ion-icon>
           </ion-button>
+          <ion-button *ngIf="a.reproduciendo" slot="end" color="dark" fill="clear" (click)="stop(a)">
+            <ion-icon  slot="icon-only"  name="pause-outline"></ion-icon>
+          </ion-button>
+
         </ion-item>
         <ion-item-options side="end">
           <ion-item-option (click)="Compartir(a)">Compartir</ion-item-option>
         </ion-item-options>
       </ion-item-sliding>
-    </ion-list>
-  <ion-list  *ngIf="buscando">
+    </ion-list> -->
+  <ion-list >
     <ion-item-sliding *ngFor="let a of audiosBuscar">
       <ion-item>
         <ion-label>{{a.titulo}}</ion-label>
         <ion-button slot="end" color="dark" fill="clear" (click)="play(a)">
-          <ion-icon slot="icon-only"  name="play-outline"></ion-icon>
+          <ion-icon *ngIf="!a.reproduciendo" slot="icon-only" name="play-outline"></ion-icon>
+          <ion-icon *ngIf="a.reproduciendo" slot="icon-only"  name="pause-outline"></ion-icon>
         </ion-button>
+        
       </ion-item>
-      <ion-item-options side="end">
+      <!-- <ion-item-options side="end">
         <ion-item-option (click)="Compartir(a)">Compartir</ion-item-option>
-      </ion-item-options>
+      </ion-item-options> -->
     </ion-item-sliding>
   </ion-list>
   <ion-button color="dark" *ngIf="buscando" (click)="verTodos()">Ver todos</ion-button>
-</ion-content>
+  <div class="ion-padding ion-text-center" style="font-size: small;">
+    Por alguna sugerencia, reclamo o si querés agregar un audio.
+    <a href="https://wa.me/5492644604481"> Hablanos!</a>
+    <!-- <ion-badge class="ion-text-center" color="danger" mode="ios"></ion-badge> -->
+  </div>
 
-<div class="ion-padding">
-  <ion-badge class="ion-text-center" color="danger" mode="ios">By CamiChaves and GuilleCasasola</ion-badge>
-</div>
+</ion-content>  
 
