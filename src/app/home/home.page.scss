@@ -1,27 +1,48 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-header ion-item {
+  --background: #316dd0;
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-header ion-item:last-of-type {
+  div {
+    padding-bottom: 20px;
+  }
+  border-radius: 0 0 20% 20%;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-searchbar {
+  --box-shadow: none;
+  --border-radius: 10px;
+  opacity: .96;
+  padding: 0;
+  margin: 12px 0;
 }
 
-#container a {
-  text-decoration: none;
+ion-col {
+  padding: 0;
+}
+
+// ::ng-deep .searchbar-search-icon {
+//   color: #316dd0 !important;
+// }
+
+ion-content {
+  --background: #f6f6f6;
+}
+
+ion-card {
+  padding: 6px;
+  box-shadow: none;
+  box-shadow: 0px 3px 45px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  margin-bottom: 22px;
+
+  ion-img {
+    width: 200px;
+    margin: 0 auto;
+  }
 }
