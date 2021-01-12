@@ -1,5 +1,5 @@
 ion-header ion-item {
-  --background: #316dd0;
+  --background: #000000;
   h2 {
     font-weight: bold;
     font-size: 20px;
@@ -11,7 +11,7 @@ ion-header ion-item:last-of-type {
   div {
     padding-bottom: 20px;
   }
-  border-radius: 0 0 20% 20%;
+  border-radius: 0 0 0 0;
 }
 
 ion-searchbar {
