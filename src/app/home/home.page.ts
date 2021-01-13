@@ -29,7 +29,6 @@ export class HomePage implements OnInit {
   buscar() {
     this.audiosBuscar = [];
     let searchText = this.textoBuscar.toLocaleLowerCase();
-
     this.audios.forEach((audio) => {
       if (audio.descripcion.toLocaleLowerCase().includes(searchText)){
         this.audiosBuscar.push(audio);
@@ -55,11 +54,16 @@ export class HomePage implements OnInit {
     }
     this.audio.src = a.url;
     this.audio.load();
-    this.audio.play();
-    a.reproduciendo = true;
-    this.audioTiempo = setTimeout( () => {
-      a.reproduciendo = false;
-    }, a.duracion * 1000);
+    a.cargando = true;
+    this.audio.addEventListener('canplaythrough', (event) => {
+      console.log('I think I can play through the entire ');
+      a.cargando = false;
+      this.audio.play();
+      a.reproduciendo = true;
+      this.audioTiempo = setTimeout( () => {
+        a.reproduciendo = false;
+      }, a.duracion * 1000);
+    });
   }
 
   pausar(a: any){
