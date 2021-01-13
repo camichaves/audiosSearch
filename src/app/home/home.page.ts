@@ -27,14 +27,13 @@ export class HomePage implements OnInit {
   }
 
   buscar() {
-    this.audiosBuscar= [];
+    this.audiosBuscar = [];
     let searchText = this.textoBuscar.toLocaleLowerCase();
 
     this.audios.forEach((audio) => {
       if (audio.descripcion.toLocaleLowerCase().includes(searchText)){
         this.audiosBuscar.push(audio);
       }
-    
     });
     this.buscando = true;
   }
@@ -42,7 +41,7 @@ export class HomePage implements OnInit {
   verTodos() {
     this.buscando = false;
     this.textoBuscar = '';
-    this.audiosBuscar = [];
+    this.audiosBuscar = this.audios;
   }
 
   Compartir(a: any) {
@@ -50,25 +49,25 @@ export class HomePage implements OnInit {
 
   play(a: any) {
     this.pausar(a);
-    if(a.reproduciendo){
+    if (a.reproduciendo){
       a.reproduciendo = false;
       return;
     }
-    this.audio.src=a.url;
+    this.audio.src = a.url;
     this.audio.load();
     this.audio.play();
-    a.reproduciendo=true;
+    a.reproduciendo = true;
     this.audioTiempo = setTimeout( () => {
-      a.reproduciendo=false
-    },a.duracion *1000)
+      a.reproduciendo = false;
+    }, a.duracion * 1000);
   }
 
-  pausar(a:any){
+  pausar(a: any){
     clearTimeout( this.audioTiempo );
     this.audio.pause();
     this.audio.currentTime = 0;
-    for(let audio of this.audiosBuscar){
-      if(audio.titulo != a.titulo){
+    for (let audio of this.audiosBuscar){
+      if (audio.titulo !== a.titulo){
         audio.reproduciendo = false;
       }
     }

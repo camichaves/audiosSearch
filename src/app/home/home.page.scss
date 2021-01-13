@@ -34,6 +34,10 @@ ion-content {
   --background: #f6f6f6;
 }
 
+.claro{
+  --background: #ffffff;
+}
+
 ion-card {
   padding: 6px;
   box-shadow: none;
@@ -44,5 +48,10 @@ ion-card {
   ion-img {
     width: 200px;
     margin: 0 auto;
+  }
+
+  .divfinal{
+    --background: #9d9fa6;
+    color: black;
   }
 }
