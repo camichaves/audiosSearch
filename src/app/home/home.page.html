@@ -31,7 +31,7 @@
       <ion-item class="claro">
         <ion-label>{{a.titulo}}</ion-label>
         <ion-badge *ngIf="a.explicit" color="danger" > explicit </ion-badge>
-        <ion-badge *ngIf="!a.sanjuanino" > No sanjua</ion-badge>
+        <ion-badge *ngIf="!a.sanjuanino" > argentino </ion-badge>
         <ion-button *ngIf="!a.cargando" slot="end" color="dark" fill="clear" (click)="play(a)">
           <ion-icon *ngIf="!a.reproduciendo" slot="icon-only" name="play-outline"></ion-icon>
           <ion-icon *ngIf="a.reproduciendo" slot="icon-only"  name="pause-outline"></ion-icon>

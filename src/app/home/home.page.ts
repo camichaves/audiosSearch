@@ -20,7 +20,7 @@ export class HomePage implements OnInit {
 
   ngOnInit(): void {
     this.audiosService.getAudios().subscribe((data) => {
-      this.audios = data.sort(function (a, b) {
+      this.audios = data.sort( function (a, b) {
         return a.titulo.localeCompare(b.titulo);
       });
       this.audiosBuscar = this.audios;
@@ -60,9 +60,9 @@ export class HomePage implements OnInit {
     this.listener = this.audio.addEventListener('canplaythrough', (event) => {
       console.log(a.url.split('/assets/audios/'))
       console.log(event)
-      if(event.target.src.split('/assets/audios/')[1] == a.url.split('/assets/audios/')[1]){
-        console.log("hola")
-
+      // @ts-ignore
+      if (event.target.src.split('/assets/audios/')[1] === a.url.split('/assets/audios/')[1]){
+        console.log('hola')
         a.cargando = false;
         this.audio.play();
         a.reproduciendo = true;
@@ -70,9 +70,8 @@ export class HomePage implements OnInit {
           a.reproduciendo = false;
           a.cargando = false;
         }, a.duracion * 1000);
-      };
-      
-    },{once:true});
+      }
+    }, {once: true});
   }
 
   pausar(a: any){
