@@ -9,10 +9,10 @@
       <ion-label>
         <h2>Audios de Whatsapp SJ</h2>
       </ion-label>
-
+      
       <ion-row class="ion-align-items-center">
         <ion-col size="10">
-          <ion-searchbar (keydown.enter)='buscar()' placeholder="Buscar" [(ngModel)]="textoBuscar"  searchIcon="musical-notes"></ion-searchbar>
+          <ion-searchbar mode="md" (keydown.enter)='buscar()' placeholder="Buscar" [(ngModel)]="textoBuscar"  color="light" searchIcon="musical-notes"></ion-searchbar>
         </ion-col>
         <ion-col size="2">
           <ion-button color="light" fill="clear" (click)="buscar()">
@@ -25,15 +25,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-img src="/assets/loading.gif" style="height:0px" ></ion-img>
   <ion-list >
     <ion-item-sliding *ngFor="let a of audiosBuscar">
       <ion-item class="claro">
         <ion-label>{{a.titulo}}</ion-label>
-        <ion-button slot="end" color="dark" fill="clear" (click)="play(a)">
+        <ion-badge *ngIf="a.explicit" color="danger" > explicit </ion-badge>
+        <ion-badge *ngIf="!a.sanjuanino" > No sanjua</ion-badge>
+        <ion-button *ngIf="!a.cargando" slot="end" color="dark" fill="clear" (click)="play(a)">
           <ion-icon *ngIf="!a.reproduciendo" slot="icon-only" name="play-outline"></ion-icon>
           <ion-icon *ngIf="a.reproduciendo" slot="icon-only"  name="pause-outline"></ion-icon>
         </ion-button>
-        
+        <ion-img *ngIf="a.cargando" slot="end" src="/assets/loading.gif" style="height: 40px; width:auto"></ion-img>
       </ion-item>
       <!-- <ion-item-options side="end">
         <ion-item-option (click)="Compartir(a)">Compartir</ion-item-option>

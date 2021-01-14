@@ -7,13 +7,14 @@ import {AudiosService} from '../services/audios.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-
+  cargando = true;
   audios: any[] = [];
   textoBuscar: string;
   audiosBuscar: any[] = [];
   buscando = false;
   audio = new Audio();
   audioTiempo: any;
+  listener: void;
 
   constructor(private audiosService: AudiosService) {}
 
@@ -24,6 +25,7 @@ export class HomePage implements OnInit {
       });
       this.audiosBuscar = this.audios;
     });
+    this.cargando=false;
   }
 
   buscar() {
@@ -55,15 +57,22 @@ export class HomePage implements OnInit {
     this.audio.src = a.url;
     this.audio.load();
     a.cargando = true;
-    this.audio.addEventListener('canplaythrough', (event) => {
-      console.log('I think I can play through the entire ');
-      a.cargando = false;
-      this.audio.play();
-      a.reproduciendo = true;
-      this.audioTiempo = setTimeout( () => {
-        a.reproduciendo = false;
-      }, a.duracion * 1000);
-    });
+    this.listener = this.audio.addEventListener('canplaythrough', (event) => {
+      console.log(a.url.split('/assets/audios/'))
+      console.log(event)
+      if(event.target.src.split('/assets/audios/')[1] == a.url.split('/assets/audios/')[1]){
+        console.log("hola")
+
+        a.cargando = false;
+        this.audio.play();
+        a.reproduciendo = true;
+        this.audioTiempo = setTimeout( () => {
+          a.reproduciendo = false;
+          a.cargando = false;
+        }, a.duracion * 1000);
+      };
+      
+    },{once:true});
   }
 
   pausar(a: any){

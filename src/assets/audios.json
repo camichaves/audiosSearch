@@ -4,14 +4,18 @@
   "url": "/assets/audios/alamaira.mp3",
   "duracion": 22 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": true,
+  "sanjuanino":true
 },{
   "titulo": "Vino el 19, me dormí...",
   "descripcion": "Vino el 19 me dormí Casuarina me dormi apareci en caucete que seco casa de una chichi colectivo bondi",
   "url": "/assets/audios/el19.mp3",
   "duracion": 64 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "Capital de los sismos...",
@@ -19,7 +23,9 @@
   "url": "/assets/audios/sismos.mp3",
   "duracion": 22 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "Comprate una semita...",
@@ -27,7 +33,9 @@
   "url": "/assets/audios/semita.mp3",
   "duracion": 13 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": true,
+  "sanjuanino":true
 },
 {
   "titulo": "Vos vieras hueon va ser un espectáculo...",
@@ -35,7 +43,9 @@
   "url": "/assets/audios/sheraton.mp3",
   "duracion": 47 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "Este grupo no sirve papija...",
@@ -43,7 +53,9 @@
   "url": "/assets/audios/gruponosirve.mp3",
   "duracion": 22 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "El falcon de la Reventa",
@@ -51,7 +63,9 @@
   "url": "/assets/audios/falcon.mp3",
   "duracion": 124 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "Tarado el pendejo, porque no compran un fiambre en el kiosco...",
@@ -59,7 +73,9 @@
   "url": "/assets/audios/fiambre.mp3",
   "duracion": 14 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "Praga, ese fue el final de la pelea...",
@@ -67,7 +83,9 @@
   "url": "/assets/audios/praga.mp3",
   "duracion": 72 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "El sapo culiao salta",
@@ -75,7 +93,9 @@
   "url": "/assets/audios/saposalta.mp3",
   "duracion": 32 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "Te estoy filmando vigilante, camara 8",
@@ -83,7 +103,9 @@
   "url": "/assets/audios/camara8.mp3",
   "duracion": 46 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
 {
   "titulo": "Tus shicos huevos",
@@ -91,7 +113,9 @@
   "url": "/assets/audios/shicoshuevos.mp3",
   "duracion": 50 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": true,
+  "sanjuanino":true
 },
 {
   "titulo": "Vos sos loco o te patió una avispa...",
@@ -99,23 +123,29 @@
   "url": "/assets/audios/avispa.mp3",
   "duracion": 48 ,
   "reproduciendo": false,
-  "cargando": false
+  "cargando": false,
+  "explicit": false,
+  "sanjuanino":true
 },
   {
     "titulo": "3700 sale la instalación??",
-    "descripcion": "3700 sale la instalacion",
+    "descripcion": "3700 sale la instalacion que te cree que soy rica de teta si sos un maricon sos un cagon chau maricon ",
     "url": "/assets/audios/3700salelainstalacion.mp3",
     "duracion": 86,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Agua para Albardon",
-    "descripcion": "Agua para Albardon",
+    "descripcion": "Agua para Albardon salinas ",
     "url": "/assets/audios/aguaparaalbardon.mp3",
     "duracion": 71,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Cuando llegues a la casa...",
@@ -123,7 +153,9 @@
     "url": "/assets/audios/cuandolleguealacasa.mp3",
     "duracion": 68,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Empezamos a correr para la Lemos",
@@ -131,7 +163,9 @@
     "url": "/assets/audios/Empezamosacorrer.mp3",
     "duracion": 98,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Hola grupo soy Vanesa",
@@ -139,7 +173,9 @@
     "url": "/assets/audios/holagruposoyvanesa.mp3",
     "duracion": 13,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Hola Juan Carlo",
@@ -147,7 +183,9 @@
     "url": "/assets/audios/holajuancarlo.mp3",
     "duracion": 14,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Como tiembla",
@@ -155,7 +193,9 @@
     "url": "/assets/audios/laputacomotiembla.mp3",
     "duracion": 32,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Me palpita la lengua",
@@ -163,7 +203,9 @@
     "url": "/assets/audios/mepalpitalalengua.mp3",
     "duracion": 12,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Murió el Diego",
@@ -171,7 +213,9 @@
     "url": "/assets/audios/muriodiego.mp3",
     "duracion": 78,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Olor a tierra",
@@ -179,7 +223,9 @@
     "url": "/assets/audios/oloratiesha.mp3",
     "duracion": 23,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Quedate en casa chupapija",
@@ -187,7 +233,9 @@
     "url": "/assets/audios/quedateencasachupapija.mp3",
     "duracion": 8,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Que te haces aqui el loco si vos sos mio",
@@ -195,15 +243,19 @@
     "url": "/assets/audios/quetehaceellocosivosomio.mp3",
     "duracion": 32,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Alguien sabe rapear",
-    "descripcion": " eh alguien en este grupo sabe rapiar rapear o hacer pistas de rap shap ",
+    "descripcion": "Alguien sabe rapear eh alguien en este grupo sabe rapiar rapear o hacer pistas de rap shap ",
     "url": "/assets/audios/saberapear.mp3",
     "duracion": 10,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Se te ha volado toda la ropa",
@@ -211,7 +263,9 @@
     "url": "/assets/audios/setehavoladotodalaropa.mp3",
     "duracion": 30,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Te tirita la pera",
@@ -219,7 +273,9 @@
     "url": "/assets/audios/tetiritalapera.mp3",
     "duracion": 9,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Cristian, el perro Berruga",
@@ -227,22 +283,28 @@
     "url": "/assets/audios/cristian.mp3",
     "duracion": 32,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   },
   {
     "titulo": "Delivery de empanadas",
-    "descripcion": "3 de carne 2 de choclo 5 de carne",
+    "descripcion": " Delivery de empanadas 3 de carne 2 de choclo 5 de carne tres de carne",
     "url": "/assets/audios/empanadas.mp3",
     "duracion": 65,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":false 
   },
   {
-    "titulo": "Galletitas con picadillo",
-    "descripcion": "Y las galletitas galletas con picadillo que rico",
+    "titulo": "Galletitas con picadillo que shico",
+    "descripcion": "Galletitas con picadillo Y las galletitas galletas con picadillo que rico que shico no te calente no te calentes si no es para caliente milanguche de sanguinesa con exprimon limido",
     "url": "/assets/audios/galletitasconpicadillo.mp3",
     "duracion": 17,
     "reproduciendo": false,
-    "cargando": false
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino":true
   }
 ]
