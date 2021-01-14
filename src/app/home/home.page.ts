@@ -72,7 +72,8 @@ export class HomePage implements OnInit {
     this.audio.currentTime = 0;
     for (let audio of this.audiosBuscar){
       if (audio.titulo !== a.titulo){
-        audio.reproduciendo = false;
+        audio.reproduciendo = false
+        audio.cargando = false;
       }
     }
 
