@@ -49,12 +49,12 @@
 },
 {
   "titulo": "Este grupo no sirve papija...",
-  "descripcion": "Este grupo no sirve papija",
+  "descripcion": "Este grupo no sirve papija gordo remisero franco administrador del grupo",
   "url": "/assets/audios/gruponosirve.mp3",
   "duracion": 22 ,
   "reproduciendo": false,
   "cargando": false,
-  "explicit": false,
+  "explicit": true,
   "sanjuanino":true
 },
 {
@@ -149,9 +149,9 @@
   },
   {
     "titulo": "Cuando llegues a la casa...",
-    "descripcion": "Cuando llegues a la casa martin modular",
+    "descripcion": "Cuando llegues a la casa martin modular en el frezzer hay hielo modula culiado",
     "url": "/assets/audios/cuandolleguealacasa.mp3",
-    "duracion": 68,
+    "duracion": 65,
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
@@ -168,14 +168,14 @@
     "sanjuanino":true
   },
   {
-    "titulo": "Hola grupo soy Vanesa",
-    "descripcion": "Hola grupo soy Vanesa feliz jaluyin jualiyin",
+    "titulo": "Hola grupo soy Vanesa feliz halloween",
+    "descripcion": "Hola grupo soy Vanesa feliz jaluyin jualiyin halloween",
     "url": "/assets/audios/holagruposoyvanesa.mp3",
     "duracion": 13,
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": false
   },
   {
     "titulo": "Hola Juan Carlo",
@@ -185,7 +185,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": false
   },
   {
     "titulo": "Como tiembla",
@@ -195,17 +195,17 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
-    "titulo": "Me palpita la lengua",
+    "titulo": "Me palpita la lengua por una birra",
     "descripcion": "las ganas que tenia de tomarme una cerveza Me palpita la lengua por una birra",
     "url": "/assets/audios/mepalpitalalengua.mp3",
     "duracion": 12,
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Murió el Diego",
@@ -215,7 +215,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Olor a tierra",
@@ -225,7 +225,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Quedate en casa chupapija",
@@ -235,7 +235,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Que te haces aqui el loco si vos sos mio",
@@ -245,7 +245,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Alguien sabe rapear",
@@ -255,7 +255,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Se te ha volado toda la ropa",
@@ -265,7 +265,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Te tirita la pera",
@@ -275,7 +275,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Cristian, el perro Berruga",
@@ -285,7 +285,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
   },
   {
     "titulo": "Delivery de empanadas",
@@ -295,7 +295,7 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":false 
+    "sanjuanino": false 
   },
   {
     "titulo": "Galletitas con picadillo que shico",
@@ -305,6 +305,50 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino":true
+    "sanjuanino": true
+  },
+  {
+    "titulo": "Meando durante terremoto",
+    "descripcion": "sismo temblor terremoto paja durante terremoto paja en terremoto",
+    "url": "/assets/audios/terrepaja.mp3",
+    "duracion": 12,
+    "reproduciendo": false,
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino": true,
+    "nuevo": true
+  },
+  {
+    "titulo": "Probando joystick en terremoto",
+    "descripcion": "joystick sismo terremoto",
+    "url": "/assets/audios/joystick.mp3",
+    "duracion": 8,
+    "reproduciendo": false,
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino": true,
+    "nuevo": true
+  },
+  {
+    "titulo": "El amor a la bicha",
+    "descripcion": "Haciendo el amor durante terrmoto estaba haciendole el amor a la bicha perforando",
+    "url": "/assets/audios/sismoamor.mp3",
+    "duracion": 17,
+    "reproduciendo": false,
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino": true,
+    "nuevo": true
+  },
+  {
+    "titulo": "Audio niñ@ durante terremoto",
+    "descripcion": "Audio niñ@ durante terremoto niño niña",
+    "url": "/assets/audios/temblor.mp3",
+    "duracion": 10,
+    "reproduciendo": false,
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino": true,
+    "nuevo": true
   }
 ]

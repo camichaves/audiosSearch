@@ -32,18 +32,20 @@
         <ion-label>{{a.titulo}}</ion-label>
         <ion-badge *ngIf="a.explicit" color="danger" > explicit </ion-badge>
         <ion-badge *ngIf="!a.sanjuanino" > argentino </ion-badge>
+        <ion-badge *ngIf="a.nuevo" color="success" > new </ion-badge>
         <ion-button *ngIf="!a.cargando" slot="end" color="dark" fill="clear" (click)="play(a)">
           <ion-icon *ngIf="!a.reproduciendo" slot="icon-only" name="play-outline"></ion-icon>
           <ion-icon *ngIf="a.reproduciendo" slot="icon-only"  name="pause-outline"></ion-icon>
         </ion-button>
-        <ion-img *ngIf="a.cargando" slot="end" src="/assets/loading.gif" style="height: 40px; width:auto"></ion-img>
+        <ion-img *ngIf="a.cargando" slot="end" src="/assets/loading.gif" style="height: 40px;"></ion-img>
       </ion-item>
       <!-- <ion-item-options side="end">
         <ion-item-option (click)="Compartir(a)">Compartir</ion-item-option>
       </ion-item-options> -->
     </ion-item-sliding>
   </ion-list>
-  <ion-button color="dark" *ngIf="buscando" (click)="verTodos()">Ver todos</ion-button>
+  <ion-button color="dark" *ngIf="buscando" (click)="verTodos()" expand="full">Ver todos</ion-button>
+  <!-- <video controls="" autoplay="" name="media"><source src="https://audiossanjuan.web.app/assets/audios/3700salelainstalacion.mp3" type="audio/mpeg"></video> -->
   <div class="ion-padding ion-text-center divfinal" style="font-size: small;">
     Por alguna sugerencia, reclamo o si querés agregar un audio.
     <a href="https://www.instagram.com/guicasoftware/"> ¡Hablános!</a>

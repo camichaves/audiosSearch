@@ -58,11 +58,8 @@ export class HomePage implements OnInit {
     this.audio.load();
     a.cargando = true;
     this.listener = this.audio.addEventListener('canplaythrough', (event) => {
-      console.log(a.url.split('/assets/audios/'))
-      console.log(event)
       // @ts-ignore
       if (event.target.src.split('/assets/audios/')[1] === a.url.split('/assets/audios/')[1]){
-        console.log('hola')
         a.cargando = false;
         this.audio.play();
         a.reproduciendo = true;
