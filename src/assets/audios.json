@@ -309,7 +309,7 @@
   },
   {
     "titulo": "Meando durante terremoto",
-    "descripcion": "sismo temblor terremoto paja durante terremoto paja en terremoto",
+    "descripcion": "sismo temblor terremoto paja durante terremoto paja en terremoto sismo temblor",
     "url": "/assets/audios/terrepaja.mp3",
     "duracion": 12,
     "reproduciendo": false,
@@ -331,7 +331,7 @@
   },
   {
     "titulo": "El amor a la bicha",
-    "descripcion": "Haciendo el amor durante terrmoto estaba haciendole el amor a la bicha perforando",
+    "descripcion": "Haciendo el amor durante terrmoto estaba haciendole el amor a la bicha perforando sismo temblor terremoto",
     "url": "/assets/audios/sismoamor.mp3",
     "duracion": 17,
     "reproduciendo": false,
@@ -342,9 +342,20 @@
   },
   {
     "titulo": "Audio niñ@ durante terremoto",
-    "descripcion": "Audio niñ@ durante terremoto niño niña",
+    "descripcion": "Audio niñ@ durante terremoto niño niña sismo temblor terremoto",
     "url": "/assets/audios/temblor.mp3",
     "duracion": 10,
+    "reproduciendo": false,
+    "cargando": false,
+    "explicit": false,
+    "sanjuanino": true,
+    "nuevo": true
+  },
+  {
+    "titulo": "Tsunami en el Ullum",
+    "descripcion": "hay alerta de tsnumai en el ullum sismo temblor terremoto",
+    "url": "/assets/audios/TerremotoUllum.mp3",
+    "duracion": 9,
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
