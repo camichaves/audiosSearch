@@ -50,8 +50,30 @@ ion-card {
     margin: 0 auto;
   }
 
-  .divfinal{
-    --background: #9d9fa6;
-    color: black;
-  }
+  
 }
+.divfinal{
+  --background: #9d9fa6;
+  color: black;
+  font-size: small;
+  padding-bottom: 50px;
+}
+
+.player {
+ position: absolute;
+ bottom: 0px; 
+ width: 100%;
+}
+
+.downloadBtn{
+  height: 100%;
+  width: 52px;
+  margin: 0;
+  border-radius: 0;
+  padding: 0 0 0 0 ;
+}
+.downloadBtn a{
+ color: #fff;
+}
+
+

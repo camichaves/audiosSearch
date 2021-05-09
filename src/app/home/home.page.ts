@@ -15,7 +15,10 @@ export class HomePage implements OnInit {
   audio = new Audio();
   audioTiempo: any;
   listener: void;
+  navigator = window.navigator
 
+  reproduciendo = false;
+  audioSrc= "";
   constructor(private audiosService: AudiosService) {}
 
   ngOnInit(): void {
@@ -46,6 +49,17 @@ export class HomePage implements OnInit {
   }
 
   Compartir(a: any) {
+    if (window.navigator && window.navigator.share) {
+      window.navigator['share']({
+        title: "Escuchá el audio '"+ a.titulo+"' en AudiosSj",
+        url: a.url
+      })
+        .then(() => console.log('Successful share'))
+        .catch((error) => console.log('Error sharing', error));
+    } else {
+      alert('No se puede compartir momentaneamente');
+    }
+    
   }
 
   play(a: any) {
@@ -57,12 +71,14 @@ export class HomePage implements OnInit {
     this.audio.src = a.url;
     this.audio.load();
     a.cargando = true;
+    this.audioSrc = a.url;
     this.listener = this.audio.addEventListener('canplaythrough', (event) => {
       // @ts-ignore
       if (event.target.src.split('/assets/audios/')[1] === a.url.split('/assets/audios/')[1]){
         a.cargando = false;
-        this.audio.play();
+        // this.audio.play();
         a.reproduciendo = true;
+        this.reproduciendo = true;
         this.audioTiempo = setTimeout( () => {
           a.reproduciendo = false;
           a.cargando = false;
@@ -73,6 +89,7 @@ export class HomePage implements OnInit {
 
   pausar(a: any){
     clearTimeout( this.audioTiempo );
+    this.reproduciendo = false;
     this.audio.pause();
     this.audio.currentTime = 0;
     for (let audio of this.audiosBuscar){

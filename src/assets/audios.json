@@ -1,4 +1,5 @@
 [{
+  "id": 1 , 
   "titulo": "La maira...",
   "descripcion": "a la maira le voy a lavar la zanja puta hermosa a esa le voy a hacer el amor",
   "url": "/assets/audios/alamaira.mp3",
@@ -8,6 +9,7 @@
   "explicit": true,
   "sanjuanino":true
 },{
+  "id": 2 , 
   "titulo": "Vino el 19, me dormí...",
   "descripcion": "Vino el 19 me dormí Casuarina me dormi apareci en caucete que seco casa de una chichi colectivo bondi",
   "url": "/assets/audios/el19.mp3",
@@ -18,6 +20,7 @@
   "sanjuanino":true
 },
 {
+  "id": 3 , 
   "titulo": "Capital de los sismos...",
   "descripcion": "capital de los sismos san juan ",
   "url": "/assets/audios/sismos.mp3",
@@ -28,6 +31,7 @@
   "sanjuanino":true
 },
 {
+  "id": 4 , 
   "titulo": "Comprate una semita...",
   "descripcion": "comprame una semita porque estoy hasta la chota culia necesito rescatarme o comprame una pija",
   "url": "/assets/audios/semita.mp3",
@@ -38,6 +42,7 @@
   "sanjuanino":true
 },
 {
+  "id": 5 , 
   "titulo": "Vos vieras hueon va ser un espectáculo...",
   "descripcion": "Vos vieras hueon va ser un espectáculo",
   "url": "/assets/audios/sheraton.mp3",
@@ -48,6 +53,7 @@
   "sanjuanino":true
 },
 {
+  "id": 6 , 
   "titulo": "Este grupo no sirve papija...",
   "descripcion": "Este grupo no sirve papija gordo remisero franco administrador del grupo",
   "url": "/assets/audios/gruponosirve.mp3",
@@ -58,6 +64,7 @@
   "sanjuanino":true
 },
 {
+  "id": 7 , 
   "titulo": "El falcon de la Reventa",
   "descripcion": "El falcon de la Reventa a vos y a tu padrino de confirmacion el rodrigo, cajoncitos ford",
   "url": "/assets/audios/falcon.mp3",
@@ -68,6 +75,7 @@
   "sanjuanino":true
 },
 {
+  "id": 8 , 
   "titulo": "Tarado el pendejo, porque no compran un fiambre en el kiosco...",
   "descripcion": "Porque no se compran un fiambre en el kiosco",
   "url": "/assets/audios/fiambre.mp3",
@@ -78,6 +86,7 @@
   "sanjuanino":true
 },
 {
+  "id": 9 , 
   "titulo": "Praga, ese fue el final de la pelea...",
   "descripcion": "Praga, ese fue el final de la pelea volaban vasos botellas de fernet apuñala chabon pum yo he estado ahi",
   "url": "/assets/audios/praga.mp3",
@@ -88,6 +97,7 @@
   "sanjuanino":true
 },
 {
+  "id": 10 , 
   "titulo": "El sapo culiao salta",
   "descripcion": "El sapo culiao salta flor bella",
   "url": "/assets/audios/saposalta.mp3",
@@ -98,6 +108,7 @@
   "sanjuanino":true
 },
 {
+  "id": 11 , 
   "titulo": "Te estoy filmando vigilante, camara 8",
   "descripcion": "Te estoy filmando vigilante, camara 8",
   "url": "/assets/audios/camara8.mp3",
@@ -108,6 +119,7 @@
   "sanjuanino":true
 },
 {
+  "id": 12 , 
   "titulo": "Tus shicos huevos",
   "descripcion": "Tus shicos huevos",
   "url": "/assets/audios/shicoshuevos.mp3",
@@ -118,6 +130,7 @@
   "sanjuanino":true
 },
 {
+  "id": 13 , 
   "titulo": "Vos sos loco o te patió una avispa...",
   "descripcion": "Vos sos loco o te patio una avispa pelotudeces de viejo gordo enamorado enamorao que venis con besos en los labios me conociste por facebook viejo choto enamorado",
   "url": "/assets/audios/avispa.mp3",
@@ -128,6 +141,7 @@
   "sanjuanino":true
 },
   {
+    "id": 14 , 
     "titulo": "3700 sale la instalación??",
     "descripcion": "3700 sale la instalacion que te cree que soy rica de teta si sos un maricon sos un cagon chau maricon ",
     "url": "/assets/audios/3700salelainstalacion.mp3",
@@ -138,6 +152,7 @@
     "sanjuanino":true
   },
   {
+    "id": 15 , 
     "titulo": "Agua para Albardon",
     "descripcion": "Agua para Albardon salinas ",
     "url": "/assets/audios/aguaparaalbardon.mp3",
@@ -148,6 +163,7 @@
     "sanjuanino":true
   },
   {
+    "id": 16 , 
     "titulo": "Cuando llegues a la casa...",
     "descripcion": "Cuando llegues a la casa martin modular en el frezzer hay hielo modula culiado",
     "url": "/assets/audios/cuandolleguealacasa.mp3",
@@ -158,6 +174,7 @@
     "sanjuanino":true
   },
   {
+    "id": 17 , 
     "titulo": "Empezamos a correr para la Lemos",
     "descripcion": "Llego la policia y Empezamos a correr para la Lemos pa pa minita adelante quedo re pegada hermano",
     "url": "/assets/audios/Empezamosacorrer.mp3",
@@ -168,6 +185,7 @@
     "sanjuanino":true
   },
   {
+    "id": 18 , 
     "titulo": "Hola grupo soy Vanesa feliz halloween",
     "descripcion": "Hola grupo soy Vanesa feliz jaluyin jualiyin halloween",
     "url": "/assets/audios/holagruposoyvanesa.mp3",
@@ -178,6 +196,7 @@
     "sanjuanino": false
   },
   {
+    "id": 19 , 
     "titulo": "Hola Juan Carlo",
     "descripcion": "hola juan carlo juancarlo como estas chupapija",
     "url": "/assets/audios/holajuancarlo.mp3",
@@ -188,6 +207,7 @@
     "sanjuanino": false
   },
   {
+    "id": 20 , 
     "titulo": "Como tiembla",
     "descripcion": "la puta como tiembla ay que largo que esta esto papa larguisimo",
     "url": "/assets/audios/laputacomotiembla.mp3",
@@ -198,6 +218,7 @@
     "sanjuanino": true
   },
   {
+    "id": 21 , 
     "titulo": "Me palpita la lengua por una birra",
     "descripcion": "las ganas que tenia de tomarme una cerveza Me palpita la lengua por una birra",
     "url": "/assets/audios/mepalpitalalengua.mp3",
@@ -208,6 +229,7 @@
     "sanjuanino": true
   },
   {
+    "id": 22 , 
     "titulo": "Murió el Diego",
     "descripcion": "periodista san juan Se murio el Diego Armando Maradona que opina la gente",
     "url": "/assets/audios/muriodiego.mp3",
@@ -218,6 +240,7 @@
     "sanjuanino": true
   },
   {
+    "id": 23 , 
     "titulo": "Olor a tierra",
     "descripcion": "y la que te quiso la cajeta olor a vaselina vencida olor a tierra",
     "url": "/assets/audios/oloratiesha.mp3",
@@ -228,6 +251,7 @@
     "sanjuanino": true
   },
   {
+    "id": 24 , 
     "titulo": "Quedate en casa chupapija",
     "descripcion": "Quedate en casa chupapija el payito payo",
     "url": "/assets/audios/quedateencasachupapija.mp3",
@@ -238,6 +262,7 @@
     "sanjuanino": true
   },
   {
+    "id": 25 , 
     "titulo": "Que te haces aqui el loco si vos sos mio",
     "descripcion": "mira hijo de puta mira voy en monopatin a buscarte Que te haces aqui el loco el mas chota de miel si vos sos mio vos sabes que yo soy loca culia pero mas o menos me defiendo",
     "url": "/assets/audios/quetehaceellocosivosomio.mp3",
@@ -248,6 +273,7 @@
     "sanjuanino": true
   },
   {
+    "id": 26 , 
     "titulo": "Alguien sabe rapear",
     "descripcion": "Alguien sabe rapear eh alguien en este grupo sabe rapiar rapear o hacer pistas de rap shap ",
     "url": "/assets/audios/saberapear.mp3",
@@ -258,6 +284,7 @@
     "sanjuanino": true
   },
   {
+    "id": 27 , 
     "titulo": "Se te ha volado toda la ropa",
     "descripcion": " eh cajeton sali para afuera Se te ha volado toda la ropa ahi tanga moradita se te ha quedado colgada en la mora shica ella rica ella",
     "url": "/assets/audios/setehavoladotodalaropa.mp3",
@@ -268,6 +295,7 @@
     "sanjuanino": true
   },
   {
+    "id": 28 , 
     "titulo": "Te tirita la pera",
     "descripcion": "o te tirita la pera cajeton",
     "url": "/assets/audios/tetiritalapera.mp3",
@@ -278,6 +306,7 @@
     "sanjuanino": true
   },
   {
+    "id": 29 , 
     "titulo": "Cristian, el perro Berruga",
     "descripcion": "Cristian el perro el berruga verruga esta meta toreando a la gente",
     "url": "/assets/audios/cristian.mp3",
@@ -288,6 +317,7 @@
     "sanjuanino": true
   },
   {
+    "id": 30 , 
     "titulo": "Delivery de empanadas",
     "descripcion": " Delivery de empanadas 3 de carne 2 de choclo 5 de carne tres de carne",
     "url": "/assets/audios/empanadas.mp3",
@@ -298,6 +328,7 @@
     "sanjuanino": false 
   },
   {
+    "id": 31 , 
     "titulo": "Galletitas con picadillo que shico",
     "descripcion": "Galletitas con picadillo Y las galletitas galletas con picadillo que rico que shico no te calente no te calentes si no es para caliente milanguche de sanguinesa con exprimon limido",
     "url": "/assets/audios/galletitasconpicadillo.mp3",
@@ -308,6 +339,7 @@
     "sanjuanino": true
   },
   {
+    "id": 32 , 
     "titulo": "Meando durante terremoto",
     "descripcion": "sismo temblor terremoto paja durante terremoto paja en terremoto sismo temblor",
     "url": "/assets/audios/terrepaja.mp3",
@@ -315,10 +347,10 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino": true,
-    "nuevo": true
+    "sanjuanino": true
   },
   {
+    "id": 33 , 
     "titulo": "Probando joystick en terremoto",
     "descripcion": "joystick sismo terremoto",
     "url": "/assets/audios/joystick.mp3",
@@ -326,10 +358,10 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino": true,
-    "nuevo": true
+    "sanjuanino": true
   },
   {
+    "id": 34 , 
     "titulo": "El amor a la bicha",
     "descripcion": "Haciendo el amor durante terrmoto estaba haciendole el amor a la bicha perforando sismo temblor terremoto",
     "url": "/assets/audios/sismoamor.mp3",
@@ -337,10 +369,10 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino": true,
-    "nuevo": true
+    "sanjuanino": true
   },
   {
+    "id": 35 , 
     "titulo": "Audio niñ@ durante terremoto",
     "descripcion": "Audio niñ@ durante terremoto niño niña sismo temblor terremoto",
     "url": "/assets/audios/temblor.mp3",
@@ -348,10 +380,10 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino": true,
-    "nuevo": true
+    "sanjuanino": true
   },
   {
+    "id": 36 , 
     "titulo": "Tsunami en el Ullum",
     "descripcion": "hay alerta de tsnumai en el ullum sismo temblor terremoto",
     "url": "/assets/audios/TerremotoUllum.mp3",
@@ -359,7 +391,6 @@
     "reproduciendo": false,
     "cargando": false,
     "explicit": false,
-    "sanjuanino": true,
-    "nuevo": true
+    "sanjuanino": true
   }
 ]
