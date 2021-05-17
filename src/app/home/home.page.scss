@@ -63,6 +63,11 @@ ion-card {
  position: absolute;
  bottom: 0px; 
  width: 100%;
+ margin-bottom: 50px;
+ border: solid 3px;
+ border-color: #000;
+ background-color: #fff;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .downloadBtn{
@@ -71,9 +76,19 @@ ion-card {
   margin: 0;
   border-radius: 0;
   padding: 0 0 0 0 ;
+  background-color: #289d8e;
 }
+ #audioPlayer {
+   width: 100%;
+ }
+
+
 .downloadBtn a{
  color: #fff;
+}
+
+.reproduciendo {
+  font-weight: bold;
 }
 
 

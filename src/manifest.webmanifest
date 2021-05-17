@@ -51,7 +51,7 @@
     },
     {
       "src": "assets/icons/icon-512x512.png",
-      "sizes": "436x436q",
+      "sizes": "436x436",
       "type": "image/png",
       "purpose": "maskable any"
     }

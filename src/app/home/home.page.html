@@ -1,3 +1,4 @@
+
 <ion-header class="ion-no-border" >
   <!-- <ion-item lines="none">
     <ion-button (click)="mostrarPop($event)" fill="clear" color="light">
@@ -23,21 +24,23 @@
     </div>
   </ion-item>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <p style="font-size: 0.6rem; text-align: center;"> Desliza el audio a la izquierda para compartir o descargar </p>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <p style="font-size: 0.6rem; text-align: center; background-color: #FFBF00; margin:0; padding: 5px 0"> Desliza el audio a la izquierda para compartir o descargar </p>
   <ion-img src="/assets/loading.gif" style="height:0px" ></ion-img>
   <ion-list >
     <ion-item-sliding *ngFor="let a of audiosBuscar">
-      <ion-item class="claro">
-        <ion-label>{{a.titulo}}</ion-label>
+      <ion-item class="claro" (click)="play(a)">
+        <ion-label [ngClass]="[a.reproduciendo ? 'reproduciendo':'']">{{a.titulo}}</ion-label>
         <ion-badge *ngIf="a.explicit" color="danger" > explicit </ion-badge>
         <ion-badge *ngIf="!a.sanjuanino" > argentino </ion-badge>
         <ion-badge *ngIf="a.nuevo" color="success" > new </ion-badge>
 
-        <ion-button *ngIf="!a.cargando" slot="end" color="dark" fill="clear" (click)="play(a)">
+        <ion-button *ngIf="!a.cargando" slot="end" color="dark" fill="clear" >
           <ion-icon *ngIf="!a.reproduciendo" slot="icon-only" name="play-outline"></ion-icon>
-          <ion-icon *ngIf="a.reproduciendo" slot="icon-only"  name="pause-outline"></ion-icon>
+          <ion-icon *ngIf="a.reproduciendo" slot="icon-only"  name="close-outline"></ion-icon>
         </ion-button>
 
         <ion-img *ngIf="a.cargando" slot="end" src="/assets/loading.gif" style="height: 40px;"></ion-img>
@@ -46,25 +49,33 @@
       <ion-item-options side="end">
         <ion-item-option (click)="Compartir(a)"><ion-icon  size="large"  name="share-social-outline"></ion-icon></ion-item-option>
         
-        <ion-button class="downloadBtn" color="medium" >
+        <ion-button class="downloadBtn" color="app"  >
           <a [href]="a.url" [download]="a.titulo" color="white">
             <ion-icon size="large" name="download-outline"></ion-icon>
           </a>
         </ion-button>
         
-        
       </ion-item-options>
-
     </ion-item-sliding>
   </ion-list>
   <ion-button color="dark" *ngIf="buscando" (click)="verTodos()" expand="full">Ver todos</ion-button>
  
-  <div class="ion-padding ion-text-center divfinal" >
+  <div id="contact" class="ion-padding ion-text-center divfinal" >
     Por alguna sugerencia, reclamo o si querés agregar un audio.
-    <a href="https://www.instagram.com/guicasoftware/"> ¡Hablános!</a>
-  </div>
-</ion-content>  
-<audio *ngIf="reproduciendo" controls="" autoplay=""  name="media" class="player">
-  <source id="playerSource" [src]="audioSrc" type="audio/mpeg">
-</audio>
+    <a href="https://www.instagram.com/camichavesapps/"> ¡Hablános!</a>
+  </div> 
 
+</ion-content>
+
+  <div *ngIf="reproduciendo" class="player">
+    <div style="background-color: white; padding: 10px 0 5px 20px; "> 
+      <b>{{dataAudioPlaying.titulo}}</b>
+    </div>
+    <div>
+      <audio *ngIf="reproduciendo" id="audioPlayer" controls="" autoplay="" name="media" >
+        <source id="playerSource" [src]="audioSrc" type="audio/mpeg">
+      </audio>
+     </div>
+    </div>
+
+ 

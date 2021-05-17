@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import {AudiosService} from '../services/audios.service';
 
 @Component({
@@ -7,6 +8,8 @@ import {AudiosService} from '../services/audios.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+  
+  @ViewChild('audioPlayer') audioPlayer : ElementRef;
   cargando = true;
   audios: any[] = [];
   textoBuscar: string;
@@ -15,17 +18,34 @@ export class HomePage implements OnInit {
   audio = new Audio();
   audioTiempo: any;
   listener: void;
-  navigator = window.navigator
+  navigator = window.navigator;
+  dataAudioPlaying ;
 
   reproduciendo = false;
   audioSrc= "";
-  constructor(private audiosService: AudiosService) {}
+  constructor(private audiosService: AudiosService,private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+   
     this.audiosService.getAudios().subscribe((data) => {
+      // Cargar Audios
       this.audios = data.sort( function (a, b) {
         return a.titulo.localeCompare(b.titulo);
       });
+
+      // Ver Parametros de URL 
+      this.route.queryParams.subscribe( data => {
+        if(data.audio){
+          let audio = this.audios.find(function(post, index) {
+            if(post.id == data.audio){
+              return post;
+            }
+          });
+          this.play(audio);
+        }
+  
+      });
+
       this.audiosBuscar = this.audios;
     });
     this.cargando=false;
@@ -52,53 +72,63 @@ export class HomePage implements OnInit {
     if (window.navigator && window.navigator.share) {
       window.navigator['share']({
         title: "Escuchá el audio '"+ a.titulo+"' en AudiosSj",
-        url: a.url
+        url: '/?audio='+a.id
       })
         .then(() => console.log('Successful share'))
         .catch((error) => console.log('Error sharing', error));
     } else {
-      alert('No se puede compartir momentaneamente');
+      alert('EL navegador no permite compartir');
     }
     
   }
 
   play(a: any) {
     this.pausar(a);
-    if (a.reproduciendo){
-      a.reproduciendo = false;
-      return;
-    }
-    this.audio.src = a.url;
-    this.audio.load();
-    a.cargando = true;
-    this.audioSrc = a.url;
-    this.listener = this.audio.addEventListener('canplaythrough', (event) => {
-      // @ts-ignore
-      if (event.target.src.split('/assets/audios/')[1] === a.url.split('/assets/audios/')[1]){
-        a.cargando = false;
-        // this.audio.play();
-        a.reproduciendo = true;
-        this.reproduciendo = true;
-        this.audioTiempo = setTimeout( () => {
-          a.reproduciendo = false;
-          a.cargando = false;
-        }, a.duracion * 1000);
+    setTimeout(() => {
+      this.audioSrc = a.url;
+      this.dataAudioPlaying = a;
+      if (a.reproduciendo){
+        a.reproduciendo = false;
+        return;
       }
-    }, {once: true});
+      document.getElementById("contact").style.marginBottom = "110px"
+      this.reproduciendo = true;
+      a.reproduciendo = true;
+      setTimeout(() => {
+        let ap :HTMLAudioElement;
+        ap = <HTMLAudioElement>document.getElementById('audioPlayer');
+        ap.play()
+      },500)
+    },100)
+   
+    // Le agrego margen al contact final para que se vea
+   
+   
   }
-
+  
   pausar(a: any){
-    clearTimeout( this.audioTiempo );
+    document.getElementById("contact").style.marginBottom = "0px"
     this.reproduciendo = false;
-    this.audio.pause();
-    this.audio.currentTime = 0;
+
+    let ap :HTMLAudioElement;
+    ap = <HTMLAudioElement>document.getElementById('audioPlayer');
+    if(ap) ap.pause();
+    // clearTimeout( this.audioTiempo );
+    // this.audio.pause();
+    // this.audio.currentTime = 0;
     for (let audio of this.audiosBuscar){
       if (audio.titulo !== a.titulo){
         audio.reproduciendo = false
         audio.cargando = false;
       }
     }
-
-
+  }
+  doRefresh(event) {
+    console.log('Begin async operation');
+    location.reload()
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
   }
 }
